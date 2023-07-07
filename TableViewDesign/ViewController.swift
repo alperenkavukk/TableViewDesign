@@ -11,6 +11,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var İzinSayısıLaberl: UILabel!
+    @IBOutlet weak var MeslekLabel: UILabel!
+    @IBOutlet weak var YasLabel: UILabel!
+    @IBOutlet weak var CisiyetLabel: UILabel!
+    @IBOutlet weak var AdSoyadLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     var isimArray = ["AlperenKavukKavuk","Alperen","alper","Alperen Kavuk","Alperen Kavuk Alperen"]
     
@@ -27,6 +32,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
        
         tableView.reloadData()
+        
+     
+                
     }
     
    
@@ -42,7 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.adSoyadLbl.text = isimArray[indexPath.row]
         cell.yearlbl.text = "Yaş:30"
         cell.cinsiyetLbl.text =  "Erkek"
-        cell.izinSayısıLbl.text = "İzinS:30"
+        cell.izinSayısıLbl.text = "30"
         cell.meslekLbl.text = "Yazılım"
        
         

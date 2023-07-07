@@ -29,7 +29,7 @@ class TableViewCell: UITableViewCell {
         stackView.axis = .horizontal
         stackView.alignment = .top
         stackView.distribution = .fill
-        stackView.spacing = 10
+        stackView.spacing = 15
         
                
         stackView.addArrangedSubview(adSoyadLbl)
